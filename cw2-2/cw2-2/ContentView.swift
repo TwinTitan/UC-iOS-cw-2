@@ -21,13 +21,13 @@ struct ContentView: View {
                 Image("us")
                     .resizable()
                     .frame(width: 30, height: 20)
-                Text("\((Double(curr) ?? 0) * 3.28)")
+                Text("$\(String(format:"%.2f",(Double(curr) ?? 0) * 3.28))")
             }
             HStack{
                 Image("uk")
                     .resizable()
                     .frame(width: 30, height: 20)
-                Text("\((Double(curr) ?? 0) * 2.46)")
+                Text("£\(String(format:"%.2f",(Double(curr) ?? 0) * 2.46))")
                     
                     
                     
@@ -36,7 +36,7 @@ struct ContentView: View {
                 Image("eu")
                     .resizable()
                     .frame(width: 30, height: 20)
-                Text("\((Double(curr) ?? 0) * 2.70)")
+                Text("€\(String(format:"%.2f",(Double(curr) ?? 0) * 2.70))")
             }
             Spacer()
             Image("exch")
